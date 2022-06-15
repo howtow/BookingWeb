@@ -1,0 +1,25 @@
+label {
+    font-family: 微軟正黑體, serif;
+    color: #005cbf;
+    letter-spacing: 2px;
+}
+body {
+    background-color: #005cbf;
+}
+.form-control{
+    padding:5px 15px; border:2px black solid;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.info{
+    color: #005cbf;
+    font-family: 微軟正黑體, serif;
+}
+#btn{
+padding:5px 15px;
+    background:#ECF5FF; border:0 firebrick;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,89 @@
+th {
+    text-align: center;
+}
+.pageNumber{
+    font-size: 20px;
+    color: black;
+    padding: 0px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #0066CC;
+    display: inline;
+    margin: 0;
+}
+.pageNumber.active{
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    text-decoration: none;
+}
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.5);
+
+}
+
+.search label .fa-magnifying-glass{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+#addHotel{
+    background-color: #E0EBFA;
+    font-family: "微軟正黑體 Light", serif;
+    position:  absolute;
+    width: 100px;
+    top: 10px;
+    left: 900px;
+    display: inline-block;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#addHotel a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#addHotel:hover{
+    background-color: #65D3DB;
+    transition: 1s;
+
+}
+
+#addRoom{
+    background-color: #E0EBFA;
+    font-family: "微軟正黑體 Light", serif;
+    position:  absolute;
+    width: 100px;
+    top: 10px;
+    left: 900px;
+    display: inline-block;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#addRoom a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#addRoom:hover{
+    background-color: #65D3DB;
+    color: white;
+    transition: 1s;
+
+}

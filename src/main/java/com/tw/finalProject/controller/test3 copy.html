@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>jquery.datepicker 6</title>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<style>
+.datag, .datetest {
+  position: relative;
+}
+.ui-datepicker-trigger {
+  position: absolute;
+}
+</style>
+<script>
+  $(function() {
+    $("#datepicker").datepicker({
+      //動畫效果 jquery animation for popup，default 為show
+      //fadeIn 、fold、slideDown ，如果設為空值則不使用動畫效果 
+      showAnim : "fade",
+   //加強動畫效果，可加入動畫效果的參數來附加效果 
+      //參考 jquery ui animate() in options
+      showOptions : {//目前我找不到可用的效果
+        direction : "up",
+        opacity : 0.1
+      },
+      //設定日期框展開動畫的時間,default ： mormal
+      //可設定:slow、normal、fast、''空值代表立刻、數字代表毫秒
+      duration:"1000"
+    });
+  });
+</script>
+</head>
+<body>
+  <div class="datetest">
+    <p class="datag">
+      Date: <input type="text" id="datepicker">
+    </p>
+  </div>
+  <div>說明：加入動畫效果</div>
+  <div>
+    jquery animation items.
+ <ul>
+      <li>blind</li>
+      <li>bounce</li>
+      <li>clip</li>
+      <li>drop</li>
+      <li>explode</li>
+      <li>fade</li>
+      <li>fold</li>
+      <li>highlight</li>
+      <li>puff</li>
+      <li>pulsate</li>
+      <li>scale</li>
+      <li>shake</li>
+      <li>size</li>
+      <li>slide</li>
+      <li>transfer</li>
+    </ul>
+  </div>
+</body>
+</html>

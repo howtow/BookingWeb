@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* 地圖用 */
+	.island{
+		color: white;
+		transition: .5s ease;
+	}
+
+	.island:hover{
+		color: rgb(130, 180, 255);
+	}
+
+	.hid{
+		opacity: 0;
+		transition: .5s ease;
+		color: rgb(255, 255, 255);
+		padding: 3px;
+		background-color: rgb(11, 66, 117);
+		border-radius: 5px;
+		font-weight: bold;
+		margin: 2px;
+	}
+
+	.visiable{
+		display: block;
+		color: rgb(255, 255, 255);
+		padding: 5px;
+		background-color: rgb(11, 66, 117);
+		border-radius: 3px;
+		animation: show 0.5s ease;
+		font-weight: bold;
+		margin: 2px;
+	}
+	.visiable:hover{
+		background-color: rgb(40, 101, 158);
+	}
+	@keyframes show{
+        0% {opacity: 0;}
+        10% {opacity: 0.1;}
+        20% {opacity: 0.2;}
+        30% {opacity: 0.3;}
+        40% {opacity: 0.4;}
+        50% {opacity: 0.5;}
+        60% {opacity: 0.6;}
+        70% {opacity: 0.7;}
+        80% {opacity: 0.8;}
+        90% {opacity: 0.9;}
+        100% {opacity: 1;}
+        from {
+            transform: translateX(-10%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+	/* 以下珍藏列表 */
+	dialog{
+		border: none;
+		box-shadow: 0 2px 6px #ccc;
+		border-radius: 10px;
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.603);
+	}
+
+	#favoritehead[open] {
+    -webkit-animation: dialogshow 0.5s ease normal;
+    }
+    @-webkit-keyframes dialogshow{
+        0% {opacity: 0;}
+        10% {opacity: 0.1;}
+        20% {opacity: 0.2;}
+        30% {opacity: 0.3;}
+        40% {opacity: 0.4;}
+        50% {opacity: 0.5;}
+        60% {opacity: 0.6;}
+        70% {opacity: 0.7;}
+        80% {opacity: 0.8;}
+        90% {opacity: 0.9;}
+        100% {opacity: 1;}
+        
+        from {
+            transform: translateX(80%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+	#favoritehead{
+		width: 600px;  
+        height: 1000px;  
+        margin-right: 1%;
+	}
+
+	.hotelrating{
+		background-color:rgb(22, 22, 88) ;
+		font-size: 20px;
+		height: 35px;
+		width: 35px;
+		border-radius: 5px 5px 5px 0px;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hotelrating a{
+		color:#ffffff;
+		text-decoration: none;
+	}
+
+	.hotelinfob{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.hoteldescrib{
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		white-space: normal;
+		overflow:hidden;
+		max-width: 300px;
+		width:300px;
+		padding: 20px 0px;
+	}
+
+	.removeandrefresh{
+		color: rgb(193, 49, 49); 
+		font-size: 30px;
+	}
+
+	.hotelblock{
+		background-color: #ffffff;
+		border: 1px solid;
+		border-color: #f3f3f3;
+		box-shadow: 0 0 8px #979797;
+		border-radius: 5px;
+		padding: 16px;
+		margin: 16px 0px;
+	}
+
+	.hotelblock:hover{
+		transition: 0.5s;
+		box-shadow: 0 0 8px #444444;
+	}
+
+	#deletedialog{
+	 	width:200px; 
+	 	height:60px; 
+	 	text-align: center;
+	 	margin: auto;
+	}

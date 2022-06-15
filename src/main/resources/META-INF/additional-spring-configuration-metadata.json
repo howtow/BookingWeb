@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "sprint.mail.port",
+      "type": "java.lang.String",
+      "description": "Description for sprint.mail.port."
+  }
+] }

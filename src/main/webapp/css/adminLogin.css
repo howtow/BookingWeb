@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-image:url("../image/culture-5.jpg") ;
+    background-size:cover;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    max-width:430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 439px;
+    width:200%;
+    /* background-color: red; */
+    transition: height 0.2s ease;
+}
+
+.container .form{
+    width:50%;
+    padding: 30px;
+    background-color:#fff;
+    transition:  margin-left 0.18s ease;
+}
+
+.container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition:  margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+/* 一開始註冊表單為透明 */
+.container .signup{  
+    opacity: 0;
+    transition: margin-left 0.09s ease;
+}
+/* 當click事件active時出現註冊表單 */
+.container.active .signup {
+    opacity: 1;
+    transition: margin-left 0.2s ease;
+}
+
+.container.active .forms {
+    height: 789px;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width:40px;
+    background-color: #3d5bac;
+    border-radius:10px;
+
+}
+
+.form .input-field{
+   
+    position: relative;
+    height: 50px;
+    width:100%;
+    margin-top:30px;
+}
+.input-field input{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    padding:0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom:2px solid #ccc;
+    border-top:2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #ffc312 ;
+}
+
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    color:#999;
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid)~ i{
+    color: #ffc312 ;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHideIcon{
+    right: 0;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    /* display: flex; */
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0px 8px -2px 4px;
+    accent-color: #4070f4;
+}
+
+.form .text{
+    color: #333;
+    font-size: 13px;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .loginBtn{
+    margin-top: 35px;
+}
+
+.form .loginBtn input{
+     border:none;
+    color:#333;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background-color: #f8b100;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.loginBtn input:hover{
+    background: #f8be00bb;
+}
+
+

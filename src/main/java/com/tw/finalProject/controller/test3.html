@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>jquery.datepicker 5</title>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" id="UI_CSS"/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/theme.css" id="THEME_CSS"/>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $("#datepicker").datepicker();
+    $(".changeClassName").bind("click", function() {
+      var obj = $(this);
+      var cssFile = obj.data('changecss');
+      $("#UI_CSS").attr("href", "http://code.jquery.com/ui/1.11.4/themes/" + cssFile + '/jquery-ui.css');
+   $("#THEME_CSS").attr("href", "http://code.jquery.com/ui/1.11.4/themes/" + cssFile + '/theme.css');
+      $("#datepicker").focus();
+    });
+  });
+</script>
+</head>
+<body>
+  <div>說明：加入可選擇樣式</div>
+  <div>
+    <ul>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="black-tie">black-tie</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="blitzer">blitzer</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="cupertino">cupertino</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="dark-hive">dark-hive</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="dot-luv">dot-luv</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="eggplant">eggplant</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="excite-bike">excite-bike</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="flick">flick</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="hot-sneaks">hot-sneaks</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="humanity">humanity</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="le-frog">le-frog</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="mint-choc">mint-choc</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="overcast">overcast</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="pepper-grinder">pepper-grinder</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="redmond">redmond</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="smoothness">smoothness</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="south-street">south-street</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="start">start</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="sunny">sunny</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="swanky-purse">swanky-purse</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="trontastic">trontastic</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="ui-darkness">ui-darkness</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="ui-lightness">ui-lightness</a></li>
+      <li><a href="javascript:void(0);" class="changeClassName" data-changecss="vader">vader</a></li>
+    </ul>
+  </div>
+  <div class="datetest">
+    <p class="datag">
+      Date: <input type="text" id="datepicker">
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

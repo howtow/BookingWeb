@@ -1,0 +1,250 @@
+@charset "UTF-8";
+dialog{
+		border: none;
+		box-shadow: 0 2px 6px #ccc;
+		border-radius: 10px;
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	#rightside{
+		padding-left: 5px;
+	}
+	
+	#searching{
+	 	width:200px; 
+	 	height:60px; 
+	 	text-align: center;
+	 	margin: auto;
+	}
+	
+	.hotelblock{
+		background-color: #ffffff;
+		border: 1px solid;
+		border-color: #f3f3f3;
+		box-shadow: 0 0 8px #979797;
+		border-radius: 5px;
+		padding: 16px;
+		margin: 16px 0px;
+	}
+
+	.hotelblock:hover{
+		transition: 0.5s;
+		box-shadow: 0 0 8px #444444;
+	}
+
+	.searchingblock{
+		background-color: #ffffff;
+		border: 1px solid;
+		border-color: #f3f3f3;
+		box-shadow: 0 0 8px #979797;
+		border-radius: 5px;
+		margin: 0px 0px 16px 0px;
+		height: 400px;
+	}
+	
+	.tagblock{
+		background-color: #ffffff;
+		border: 1px solid;
+		border-color: #f3f3f3;
+		box-shadow: 0 0 8px #979797;
+		border-radius: 5px;
+		margin: 0px 0px 16px 0px;
+		padding: 20px;
+	}
+
+	.btnf{
+		font-style: normal;
+		align-items: center;
+		border: 1px solid #e7e7e7;
+		border-radius: 2px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		padding: 8px;
+		display: flex;
+	}
+	
+	.pageBtn{
+		margin: 4px;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		color: #0071c2;
+		height: 24px;
+		min-width: 24px;
+		padding: 0 4px;
+	}
+
+	.clickedbtn{
+		background-color: transparent;
+		border-color: #949494;
+		color: #6b6b6b;
+		cursor: default;
+	}
+
+	.pageBtn:not(.clickedbtn):hover{
+		background-color: #0071c2;
+		color: white;
+	}
+
+	.hotelimgf{
+		padding: 0px 200px 0px 0px;
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+   		border-radius: 10px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hotelimgb{
+		width: 200px;
+		transition: all 0.3s linear;
+		
+	}
+
+	.hotelimgb:hover{
+		transform: scale(1.19);
+	}
+
+	.hotelinfof{
+		margin-left: 16px;
+		flex: 1 1 auto;
+		width: calc(100% - 200px - 16px);
+		border-left: 1px solid rgb(146, 146, 146);
+		padding: 12px;
+		height: 200px;
+	}
+
+	.hotelinfob{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.hoteldescrib{
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		white-space: normal;
+		overflow:hidden;
+		max-width: 300px;
+		width:300px;
+		padding: 20px 0px;
+	}
+
+	.hoteldetail{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align:right;
+	}
+
+	.hotelrating{
+		background-color:rgb(22, 22, 88) ;
+		font-size: 20px;
+		height: 35px;
+		width: 35px;
+		border-radius: 5px 5px 5px 0px;
+		text-align: center;
+	}
+
+	.hotelrating a{
+		color:#ffffff;
+		text-decoration: none;
+	}
+
+	.orderbtn{
+		color: #0071c2;
+    	font-weight: 400;
+		padding: 8px 12px;
+		text-decoration: none;
+   		white-space: nowrap;
+		border: 1px solid #0071c2;
+		background-color: white;
+	}
+
+	.orderbtn:not(:disabled):hover{
+		color: #0071c2;
+    	font-weight: 400;
+		padding: 8px 12px;
+		text-decoration: none;
+   		white-space: nowrap;
+		border: 1px solid #0071c2;
+		background-color: #e7fde9;
+	}
+
+	:is(:disabled).orderbtn{
+		color: #ffffff;
+    	font-weight: 400;
+		padding: 8px 12px;
+		text-decoration: none;
+   		white-space: nowrap;
+		border: 1px solid #0071c2;
+		background-color: #0071c2;
+		cursor: pointer;
+	}
+
+	.inputlabel{
+		margin-bottom: 0px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.searchinginput{
+		border: 2px solid rgb(204, 204, 204);
+		border-radius: 2px;
+	}
+
+	.searchinginput:focus{
+		outline: none;
+		border: 2px solid #0071c2;
+	}
+
+	.submit{ 
+		border: 0px; 
+		background-color: #0071c2;
+		color: #ffffff;
+	}
+
+	.submit:hover{
+		background-color: #005592;
+	}
+
+	.atext{
+		text-decoration: none;
+		color: #005592;
+	}
+
+	.atext:hover{
+		text-decoration: none;
+		color: #be7c00;
+	}
+
+	.regiontext{
+		text-decoration: underline;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		font-weight: bold;
+	}
+
+	.addfavorite{
+		color: gray;
+		font-size: 30px;
+	}
+
+	.removefavorite{
+		color: rgb(193, 49, 49); 
+		font-size: 30px;
+	}
